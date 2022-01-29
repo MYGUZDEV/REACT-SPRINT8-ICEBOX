@@ -5,7 +5,7 @@ export default function ApiUsers() {
       
       const [users, setUsers] = useState([])
       useEffect(()=>{
-          axios.get('http://localhost:5000/usersInDB')
+          axios.get('http://localhost:5000/api/users')
           .then(({data}) => { 
               console.log(data);
               setUsers(JSON.stringify(data));
