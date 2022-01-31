@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, {useEffect,useState} from 'react';
 
+import UserFind from './UserFind.jsx';
+
 export default function UserId() {
   const [usersId, setUserId] = useState([])
       useEffect(()=>{
@@ -14,10 +16,9 @@ export default function UserId() {
           .catch(e=>console.log(e))
       },[])
   return (
-      <div>
-          <h1>Prueba de UserId.jsx</h1>
-          <p>{usersId}</p>
-      </div>
+      <>
+        <UserFind />
+      </>
     //console.log("UserId")
   )
 };

@@ -8,7 +8,6 @@ export default function ProductId() {
           .then(({data}) => { 
               console.log(data);
               setProductsId(JSON.stringify(data));
-              
               //console.log('ProductId', ProductId);
             })
           .catch(e=>console.log(e))
